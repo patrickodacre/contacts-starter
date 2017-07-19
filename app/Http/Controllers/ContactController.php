@@ -51,6 +51,9 @@ class ContactController extends Controller
         if (!empty($data['phone'])) {
             $contact->phone  = $data['phone'];
         }
+        if (!empty($data['zip'])) {
+            $contact->zip  = $data['zip'];
+        }
         if (!empty($data['email'])) {
             $contact->email  = $data['email'];
         }
@@ -117,6 +120,9 @@ class ContactController extends Controller
         }
         if (!empty($data['phone'])) {
             $contact->phone  = $data['phone'];
+        }
+        if (!empty($data['zip'])) {
+            $contact->zip  = $data['zip'];
         }
         if (!empty($data['email'])) {
             $contact->email  = $data['email'];
