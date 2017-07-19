@@ -67,6 +67,7 @@ class ContactController extends Controller
         }
 
         if ($contact->save()) {
+
             $response = [
                 'message' => 'Contact created.',
                 'contact' => $contact,
